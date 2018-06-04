@@ -201,6 +201,102 @@ html {
 	/*background-image:url("img/backgrhome.png");*/
 	background-repeat:no-repeat;
 }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.restaurant {
+    background-image: url(../images/restaurant_1.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 0 0 10px 40px !important;
+    color: #ea7100;
+}
+.club {
+    background-image: url(../images/club_1.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 0 0 10px 40px !important;
+    color: #0b7408;
+}
 #container{
 	width:950px;
 	margin:10px auto 0 auto;
@@ -216,11 +312,13 @@ html {
     border-style:double
     
 }
-
+#container .box_cnt{
+	background-image:url(../images/box_cnt.gif);
+}
 #container .box_footer{
 	width:900px;
 	padding:30px 25px;
-	
+	background-image:url(../images/box_bott.gif);
 	background-position:bottom;
 	background-repeat:no-repeat;
 	margin-left:60px;
@@ -230,7 +328,7 @@ html {
 }
 #container .spacer_large{
 	width:919px;
-	
+	background-image:url(../images/splitter.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
 	padding:30px 0;
@@ -286,20 +384,6 @@ html {
 	width:280px;
 	padding:10px 10px 0 0;
 }
-.restaurant {
-    background-image: url(../images/restaurant_1.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    padding: 0 0 10px 40px !important;
-    color: #ea7100;
-}
-.club {
-    background-image: url(../images/club_1.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    padding: 0 0 10px 40px !important;
-    color: #0b7408;
-}
 #container .info_locatie .image{
 	padding:5px 0 0 0;
 	width:286px;
@@ -334,9 +418,9 @@ html {
 	margin-bottom: 99%;
 }
 #container h2{
-	font-size:20px;
-	color:#5b5b5b;
-	font-weight:bold;
+	font-size:16px;
+	color:#481972;
+	font-weight:normal;
 	padding:10px 0 10px 0;
 }
 #container h2 a{
@@ -382,4 +466,23 @@ html {
 	border-bottom: 1px groove;
 	margin-right: 40px;
 	color: #5b5b5b;
+}
+.title {
+    display: block;
+    width: 390px;
+    padding: 8px 0 19px 0;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/l-lead-title.gif) repeat-x 0 18px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 11px;
+    background: #FFF;
+}
+.title SPAN {
+    background: #FFF;
+    padding: 0 20px;
 }

@@ -1,3 +1,39 @@
+
+#review{
+	width:50 px;
+	height:50 px;
+	margin-left:305px;
+	margin-right:5 px;
+	border-radius: 25px;
+    border: 1px medium ;
+    border-style:double
+}
+#review1{
+	width:50 px;
+	height:50 px;
+	margin-right:5 px;
+	border-radius: 25px;
+    border: 1px medium ;
+    border-style:double
+}
+#review2{
+	width:50 px;
+	height:50 px;
+	margin-left:355px;
+	margin-right:5 px;
+	border-radius: 25px;
+    border: 1px medium ;
+    border-style:double
+}
+#review3{
+	width:50 px;
+	height:50 px;
+	margin-left:250px;
+	margin-right:5 px;
+	border-radius: 25px;
+    border: 1px medium ;
+    border-style:double
+}
 body { 
 	background: #f2f2f2;
 	color: #5b5b5b;
@@ -216,11 +252,13 @@ html {
     border-style:double
     
 }
-
+#container .box_cnt{
+	background-image:url(../images/box_cnt.gif);
+}
 #container .box_footer{
 	width:900px;
 	padding:30px 25px;
-	
+	background-image:url(../images/box_bott.gif);
 	background-position:bottom;
 	background-repeat:no-repeat;
 	margin-left:60px;
@@ -230,7 +268,7 @@ html {
 }
 #container .spacer_large{
 	width:919px;
-	
+	background-image:url(../images/splitter.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
 	padding:30px 0;
@@ -286,20 +324,6 @@ html {
 	width:280px;
 	padding:10px 10px 0 0;
 }
-.restaurant {
-    background-image: url(../images/restaurant_1.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    padding: 0 0 10px 40px !important;
-    color: #ea7100;
-}
-.club {
-    background-image: url(../images/club_1.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    padding: 0 0 10px 40px !important;
-    color: #0b7408;
-}
 #container .info_locatie .image{
 	padding:5px 0 0 0;
 	width:286px;
@@ -334,9 +358,9 @@ html {
 	margin-bottom: 99%;
 }
 #container h2{
-	font-size:20px;
-	color:#5b5b5b;
-	font-weight:bold;
+	font-size:16px;
+	color:#481972;
+	font-weight:normal;
 	padding:10px 0 10px 0;
 }
 #container h2 a{
@@ -382,4 +406,23 @@ html {
 	border-bottom: 1px groove;
 	margin-right: 40px;
 	color: #5b5b5b;
+}
+.title {
+    display: block;
+    width: 390px;
+    padding: 8px 0 19px 0;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/l-lead-title.gif) repeat-x 0 18px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 11px;
+    background: #FFF;
+}
+.title SPAN {
+    background: #FFF;
+    padding: 0 20px;
 }

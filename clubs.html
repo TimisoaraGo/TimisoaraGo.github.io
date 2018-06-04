@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Popular clubs</title>
+		<link href="clubs.css" rel="stylesheet" type="text/css">
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+	</head>
+		<body>
+	<div id="ant">
+	<a href="home.html"><img class="logo" src="logo.png" /></a>
+	<iframe class="blank" src="https://www.meteoblue.com/en/weather/widget/daily/timi%c8%99oara_romania_665087?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px;height: 171px"></iframe></div>
+	</div>
+		<header>
+	<nav >
+		<ul>
+			<li>
+				<a href="">
+						Tourist attractions
+					</a>
+					<div>
+						<ul>
+							<li><a href="biserici.html">Historical churches</a></li>
+							<li><a href="muzee.html">Museums</a></li>
+						</ul>
+					</div>
+			</li>
+			<li>
+				<a href="">
+					
+						What can you do?
+				</a>
+				<div>
+					<ul>
+						<li><a href="shopping.html">Shopping</a></li>
+						<li><a href="clubs.html">Popular clubs</a></li>
+						<li><a href="restaurantsPubs.html">Restaurants and Pubs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="WhereCanYouStay.html">
+						Where can you stay?
+				</a>
+			</li>
+			<li>
+				<a href="">
+						  About Timisoara
+				</a>
+				<div>
+					<ul>
+						<li><a href="TownHistory.html">Town's history</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		
+	</nav>
+	
+</header>
+<div class="fundal" >
+<div id="container" >
+	<div class="box_cnt">
+
+<div class="box_top">
+  <div class="box_footer">
+		<h1 class="biserici" >Popular clubs</h1><br>
+			<div class="org">
+			
+			<h2>Epic Summer</h2>
+			
+						<a title="cat"><img alt="cat" src="img/epix.jpg";width=150&amp height=250&amp;height="210"; width="300" class="img"></a>
+ 							The freshness of Epic Vara brings a chill flow to summer nights. The wooden framework and the marine props get the audience in an easygoing atmosphere. Air and colours mix together in dance steps, to create unforgettable memories. When you feel like taking it to somewhere quiet, to meet new people and share a smile, Epic Garden is right next door. This playground for adults brings a sophisticated twist on hopscotch and swings, taking the social game between beautiful people to the next level.<br><br>
+							<br><br>
+							<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 6</div>
+									<img src="img/ep1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 6</div>
+									<img src="img/ep2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 6</div>
+									<img src="img/ep3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 6</div>
+									<img src="img/ep4.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">5 / 6</div>
+									<img src="img/ep5.jpg" style="width:100%">
+								  </div>
+
+								<div class="mySlides">
+									<div class="numbertext">6 / 6</div>
+									<img src="img/ep6.jpg" style="width:100%">
+								  </div>
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/ep1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ep2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ep3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ep4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ep5.jpg" height="100" style="width:100%" onclick="currentSlide(5)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/ep6.jpg" height="100" style="width:100%" onclick="currentSlide(6)">
+									</div>
+
+								  </div>
+								</div>
+								<br>
+								<header class="title"><span>On map</span></header><br>
+								<br>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.6039900526744!2d21.243562115321815!3d45.73903607910519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455decd6886585%3A0x15b172b43350624c!2sEpic+Vara!5e0!3m2!1sro!2sro!4v1527512006840" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="clear"></div>
+						<div class="clear"></div> <br>	</div>
+			<div class="org">	
+				<h2>Heaven</h2>
+						<a title="art"><img alt="art" src="img/heavenS.jpg"; height=290; width="350" class="img"></a>
+						Night life is becoming more and more beautiful in Timisoara, and nights in the club quickly turn into mornings and sunrises. Here, the music does not stop...nor the dance, nor the smiles of people eager for another night of fun.
+						The beat sends us to heaven and the strong bass gets us down on the ground. Hours are turning into days, days in weeks, and every weekend we just want to experience the infinite Heaven sensation. When was the last time you danced?  We lift our hands in the air and shout in the chorus: "Welcome in Heaven!"<br><br>
+					
+							<br>
+							<br>
+								<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 6</div>
+									<img src="img/h1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 6</div>
+									<img src="img/h2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 6</div>
+									<img src="img/h3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 6</div>
+									<img src="img/h4.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">5 / 6</div>
+									<img src="img/h5.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">6 / 6</div>
+									<img src="img/h6.jpg" style="width:100%">
+								  </div>
+
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/h1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/h2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/h3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/h4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/h5.jpg" height="100" style="width:100%" onclick="currentSlide(5)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/h6.jpg" height="100" style="width:100%" onclick="currentSlide(6)">
+									</div>
+
+								  </div>
+								</div>
+								<br>
+								<header class="title"><span>On map</span></header><br>
+								<br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.5747108063692!2d21.24694951532179!3d45.739623179105166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455ded65ae4929%3A0x556d136fd5cc4d61!2sHeaven!5e0!3m2!1sro!2sro!4v1527511743555" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="clear"></div>
+			</div>
+			<div class="org">	
+			<h2>Fratelli</h2>
+				<a title="comunist"><img alt="comunist" src="img/frt.jpg"width=230&amp height=270&amp;height="210"; width="300" class="img"></a>
+					Fratelli Lounge & Club has all it takes for cool live music and perfect parties! We bring you the hottest DJs and bands, while you and your friends dance the night away and enjoy soft drinks, champagne and our delicious cocktails.
+Fratelli Terrazza is located on the left side of the Bega River. On hot summer days, Fratelli Terrazza is your best choice to refresh yourself with soft drinks, lemonade, lounge music, cocktails & fancy food <br><br> <br>
+					<br><br><br><br>
+
+					<div class="container">
+								  <div class="mySlides">
+									<div class="numbertext">1 / 6</div>
+									<img src="img/mc1.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 6</div>
+									<img src="img/mc2.jpg" style="width:100%">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 6</div>
+									<img src="img/mc3.jpg" style="width:100%">
+								  </div>
+									
+								  <div class="mySlides">
+									<div class="numbertext">4 / 6</div>
+									<img src="img/mc4.jpg" style="width:100%">
+								  </div>
+								  
+								  <div class="mySlides">
+									<div class="numbertext">5 / 6</div>
+									<img src="img/mc5.jpg" style="width:100%">
+								  </div>
+								  <div class="mySlides">
+									<div class="numbertext">6 / 6</div>
+									<img src="img/mc5.jpg" style="width:100%">
+								  </div>
+
+									
+								  <a class="prev" onclick="plusSlides(-1)">❮</a>
+								  <a class="next" onclick="plusSlides(1)">❯</a>
+
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <div class="row">
+									<div class="column">
+									  <img class="demo cursor" src="img/fr1.jpg" height="100" style="width:100%" onclick="currentSlide(1)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/fr2.jpg" height="100" style="width:100%" onclick="currentSlide(2)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/fr3.jpg" height="100" style="width:100%" onclick="currentSlide(3)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/fr4.jpg" height="100" style="width:100%" onclick="currentSlide(4)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/fr5.jpg" height="100" style="width:100%" onclick="currentSlide(5)">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/fr6.jpg" height="100" style="width:100%" onclick="currentSlide(6)">
+									</div>
+
+								  </div>
+								</div><br>
+								<header class="title"><span>On map</span></header><br>
+								<br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0150125597447!2d21.23445831532226!3d45.75084497910529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d865332ac41%3A0xe6b3f349cf2fd79e!2sFratelli+Lounge%26Club!5e0!3m2!1sro!2sro!4v1527512126134" width="800" height="250" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+				<div class="clear"></div> <br> </div>
+				</div><p>&nbsp;</p>
+
+`
+
+</body>
+</html>
+
+
